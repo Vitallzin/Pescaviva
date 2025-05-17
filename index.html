@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo_pescaviva.png" type="image/x-icon">
+    <title>Pag_Inical</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_principal">
+            <div class="header_esquerdo">
+                <img src="img/logo_pescaviva.png" alt="" id="logo_pescaviva"
+                    style="height: 60px; vertical-align: middle; cursor: pointer;"
+                    onclick="window.location.href='index.html'">
+
+
+                <label for="pesquisar"></label>
+                <input type="text" id="pesquisar" placeholder="Pesquisar">
+                <button id="botao-pesquisar" class="botao_lupa">
+                    <img src="img/lupa.png" alt="lupa" id="lupa"
+                        style="height: 24px; vertical-align: middle; cursor: pointer">
+                </button>
+
+            </div>
+            <nav class="header_direito">
+                <button id="publicar">
+                    <img src="img/publicar.png" alt="carrinho" id="carrinho-img"
+                        style="height: 40px; vertical-align: middle; margin-right: 8px;">Publicar
+                </button>
+
+                <button id="notificacao">
+                    <img src="img/notificacao.png" alt="carrinho" id="carrinho-img"
+                        style="height: 40px; vertical-align: middle; margin-right: 8px;">Notificação
+                </button>
+
+                <button id="carrinho">
+                    <img src="img/carrinho.png" alt="carrinho" id="carrinho-img"
+                        style="height: 30px; vertical-align: middle; margin-right: 8px;">Carrinho
+                </button>
+
+                <button id="chat">
+                    <img src="img/chat.png" alt="carrinho" id="carrinho-img"
+                        style="height: 35px; vertical-align: middle; margin-right: 8px;">Chat
+                </button>
+
+
+                <button id="entrar">Entrar</button>
+                <button id="cadastrar">Cadastrar</button>
+            </nav>
+        </div>
+    </header>
+    <!-- Fim do cabeçalho -->
+
+    <!-- 1° Main inicio-->
+    <main id="main-lista">
+        <div class="botoes-main">
+            <button id="botao1">Botão 1</button>
+            <button id="botao2">Botão 2</button>
+            <button id="botao3">Botão 3</button>
+            <button id="botao4">Botão 4</button>
+        </div>
+
+
+
+        <!-- Imganes de algumas propagrandaas que vão andar sozinhas ou o usuario vai mexer-->
+        <div class="banner">
+            <img src="img/banner1.png" alt="banner 1">
+            <img src="img/banner_teste.jpg" alt="banner 2">
+            <img src="img/banner1.png" alt="banner 3">
+        </div>
+
+
+        <!-- Início dos cards -->
+
+        <div class="A">
+            <h2 style="text-align: left; margin-bottom: 24px;">Produtos em Destaque</h2>
+            <div class="container-wrapper">
+                <div class="container" id="produtos-destaque"></div>
+                <button class="voltar-produto" id="botao-destaque-voltar"><</button>
+                        <button class="proximo-produto" id="botao-destaque">></button>
+            </div>
+        </div>
+
+        <div class="A">
+            <h2 style="text-align: left; margin-bottom: 24px;">Peixes perto de você</h2>
+            <div class="container-wrapper">
+                <div class="container" id="peixes-perto"></div>
+                <button class="voltar-produto" id="botao-peixes-voltar"><</button>
+                        <button class="proximo-produto" id="botao-peixes">></button>
+            </div>
+        </div>
+
+    </main>
+
+<!-- 1° Main final-->
+
+
+<!-- 2° Main inicio-->
+
+<main id="main-detalhe" style="display:none;"></main>
+
+<!-- 2° Main final-->
+
+
+
+<!-- Início do rodapé -->
+
+    <footer>
+        <table>
+            <tr>
+                <td style="width: 33.33%;">
+                    <p>Institucional</p>
+                    <a href="#">Sobre nós</a><br>
+                    <a href="#">Política de Privacidade</a><br>
+                    <a href="#">Termos de Uso</a><br>
+                    <a href="#">Acessibilidade</a><br>
+                    <a href="#">Transparência de Dados</a><br>
+                </td>
+                <td style="width: 33.33%;">
+                    <p>Redes sociais</p>
+                    <div>
+                        <a href="#" target="_blank">Facebook</a><br>
+                        <a href="https://www.instagram.com/app.pescaviva/" target="_blank">Instagram</a><br>
+                        <a href="#" target="_blank">Twitter</a><br>
+                        <a href="#" target="_blank">LinkedIn</a><br>
+                    </div>
+                </td>
+                <td style="width: 33.33%;">
+                    <p>Contato</p>
+                    <div>
+                        <a href="#">contato@pescaviva.com.br</a><br>
+                        <a href="#">(00) 9 9999-9999</a><br>
+                        <a href="#">Rua dos Navegantes, 145 – Bairro Costa Azul </a><br>
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+
+                <td colspan="3" class="copyright">
+                    Tecnologia para quem vive do mar.<br>
+                    &copy; 2025 PescaViva. Todos os direitos reservados.
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <script src="Js/card.js"></script>
+    <script src="Js/passinho.js"></script>
+    <script src="Js/detalhes.js"></script>
+</body>
+</html>
