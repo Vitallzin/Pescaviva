@@ -28,22 +28,22 @@
             </div>
             <nav class="header_direito">
                 <button id="publicar">
-                    <img src="img/publicar.png" alt="carrinho" id="carrinho-img"
+                    <img src="img/publicar.png" alt="publicar   " 
                         style="height: 40px; vertical-align: middle; margin-right: 8px;">Publicar
                 </button>
 
                 <button id="notificacao">
-                    <img src="img/notificacao.png" alt="carrinho" id="carrinho-img"
+                    <img src="img/notificacao.png" alt="notificação" 
                         style="height: 40px; vertical-align: middle; margin-right: 8px;">Notificação
                 </button>
 
                 <button id="carrinho">
-                    <img src="img/carrinho.png" alt="carrinho" id="carrinho-img"
+                    <img src="img/carrinho.png" alt="carrinho"
                         style="height: 30px; vertical-align: middle; margin-right: 8px;">Carrinho
                 </button>
 
                 <button id="chat">
-                    <img src="img/chat.png" alt="carrinho" id="carrinho-img"
+                    <img src="img/chat.png" alt="chat" 
                         style="height: 35px; vertical-align: middle; margin-right: 8px;">Chat
                 </button>
 
@@ -106,6 +106,55 @@
 <!-- 2° Main final-->
 
 
+<!-- 3° Main carrinho-->
+<main id="main-carrinho" style="display:none;">
+    <button onclick="voltarParaLista()">Voltar</button>
+    <h2>Carrinho de Compras</h2>
+    <ul id="lista-carrinho"></ul>
+</main>
+
+<!-- 3° Main carrinho final-->
+
+<!-- 4° Main notificacao-->
+<main id="main-notificacao" style="display:none;">
+    <h2>Notificações</h2>
+    <button onclick="voltarParaLista()">Voltar</button>
+    <div class="notificacao-wrapper">
+        <ul id="lista-notificacoes">
+            <li class="notificacao-item" data-msg="Você recebeu uma nova mensagem no chat.">
+                <img src="img/logo_pescaviva.png" alt="Mensagem" class="icone-notificacao">
+                <span>Você recebeu uma nova mensagem no chat.</span>
+            </li>
+            <li class="notificacao-item" data-msg="Seu pedido foi enviado!">
+                <img src="img/logo_pescaviva.png" alt="Pedido" class="icone-notificacao">
+                <span>Seu pedido foi enviado!</span>
+            </li>
+            <li class="notificacao-item" data-msg="Promoção: Peixes frescos com 10% de desconto hoje.">
+                <img src="img/logo_pescaviva.png" alt="Promoção" class="icone-notificacao">
+                <span>Promoção: Peixes frescos com 10% de desconto hoje.</span>
+            </li>
+        </ul>
+        <div id="notificacao-detalhe" class="notificacao-detalhe">
+            <span class="detalhe-placeholder">Clique em uma notificação para ver o detalhe aqui.</span>
+        </div>
+    </div>
+</main>
+
+<!-- 4° Main notificacao final-->
+
+
+<!-- 5° Main chat-->
+<main id="main-chat" style="display:none;">
+   <h2>Chat</h2>
+    <div id="chat-mensagens" class="chat-mensagens"></div>
+    <form id="chat-form" class="chat-form">
+        <input type="text" id="chat-input" placeholder="Digite sua mensagem..." autocomplete="off" />
+        <button type="submit">Enviar</button>
+    </form>
+    <button onclick="voltarParaLista()">Voltar</button>
+   
+</main>
+
 
 <!-- Início do rodapé -->
 
@@ -145,11 +194,17 @@
                     Tecnologia para quem vive do mar.<br>
                     &copy; 2025 PescaViva. Todos os direitos reservados.
                 </td>
+                <td>
+                    V.0.2
+                </td>
             </tr>
         </table>
     </footer>
     <script src="Js/card.js"></script>
     <script src="Js/passinho.js"></script>
     <script src="Js/detalhes.js"></script>
+    <script src="Js/carrinho.js"></script>
+    <script src="Js/notificacao.js"></script>
+
 </body>
 </html>

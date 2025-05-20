@@ -1,73 +1,220 @@
 const produtosDestaque = [
-    {
-        imagem: "https://fly.metroimg.com/upload/q_85,w_700/https://uploads.metroimg.com/wp-content/uploads/2023/01/05174817/atum-de-R-14-milhao.jpg",
-        titulo: "Atum Azul",
-        descricao: "Fresco e nobre",
-        preco: "R$ 140,00",
-        link: "descricao"
-    },
-    {
-        imagem: "https://ogimg.infoglobo.com.br/in/25126461-9c6-aee/FT1086A/760/Kiyoshi-Kimura.jpg",
-        titulo: "Salmão Selvagem",
-        descricao: "Rico em ômega",
-        preco: "R$ 120,00",
-        link: "descricao"
-    },
-    {
-        imagem: "https://fly.metroimg.com/upload/q_85,w_700/https://uploads.metroimg.com/wp-content/uploads/2023/01/05174817/atum-de-R-14-milhao.jpg",
-        titulo: "Atum Vermelho",
-        descricao: "Corte premium",
-        preco: "R$ 98,00"
-    },
-    {
-        imagem: "https://ogimg.infoglobo.com.br/in/25126461-9c6-aee/FT1086A/760/Kiyoshi-Kimura.jpg",
-        titulo: "Salmão Alaska",
-        descricao: "Filé especial",
-        preco: "R$ 110,00"
-    },
-    {
-        imagem: "https://fly.metroimg.com/upload/q_85,w_700/https://uploads.metroimg.com/wp-content/uploads/2023/01/05174817/atum-de-R-14-milhao.jpg",
-        titulo: "Atum Branco",
-        descricao: "Leve e macio",
-        preco: "R$ 85,00"
-    },
-    {
-        imagem: "https://ogimg.infoglobo.com.br/in/25126461-9c6-aee/FT1086A/760/Kiyoshi-Kimura.jpg",
-        titulo: "Salmão Orgânico",
-        descricao: "Cultivo natural",
-        preco: "R$ 130,00"
-    },
-    {
-        imagem: "https://fly.metroimg.com/upload/q_85,w_700/https://uploads.metroimg.com/wp-content/uploads/2023/01/05174817/atum-de-R-14-milhao.jpg",
-        titulo: "Atum Grelhado",
-        descricao: "Pronto consumo",
-        preco: "R$ 70,00"
-    },
-    {
-        imagem: "https://ogimg.infoglobo.com.br/in/25126461-9c6-aee/FT1086A/760/Kiyoshi-Kimura.jpg",
-        titulo: "Salmão Defumado",
-        descricao: "Sabor marcante",
-        preco: "R$ 95,00"
-    }
+  {
+    imagem: "img/peixes/tilapia.jpeg",
+    titulo: "Tilápia",
+    descricao: "Peixe de carne branca e sabor suave.",
+    preco: "R$ 25,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/salmao.jpeg",
+    titulo: "Salmão",
+    descricao: "Peixe rico em ômega-3.",
+    preco: "R$ 80,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/atum.jpeg",
+    titulo: "Atum",
+    descricao: "Peixe de carne vermelha e sabor marcante.",
+    preco: "R$ 60,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/piracucu.jpeg",
+    titulo: "Pirarucu",
+    descricao: "Peixe amazônico de carne branca.",
+    preco: "R$ 45,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/tambaqui.jpeg",
+    titulo: "Tambaqui",
+    descricao: "Peixe amazônico de sabor único.",
+    preco: "R$ 35,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/pacu.jpeg",
+    titulo: "Pacu",
+    descricao: "Peixe de água doce com carne saborosa.",
+    preco: "R$ 30,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/dourado.jpeg",
+    titulo: "Dourado",
+    descricao: "Peixe de água doce com carne firme.",
+    preco: "R$ 50,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/traira.jpeg",
+    titulo: "Traíra",
+    descricao: "Peixe de água doce com carne saborosa.",
+    preco: "R$ 28,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/caranguejo.jpeg",
+    titulo: "Caranguejo",
+    descricao: "Crustáceo de carne saborosa.",
+    preco: "R$ 40,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/camarao.jpeg",
+    titulo: "Camarão",
+    descricao: "Crustáceo versátil na culinária.",
+    preco: "R$ 70,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/polvo.jpeg",
+    titulo: "Polvo",
+    descricao: "Muito usado na culinária mediterrânea",
+    preco: "R$ 95,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/ostra.jpeg",
+    titulo: "Ostra",
+    descricao: "Delicada e fresca",
+    preco: "R$ 80,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/lagosta.jpeg",
+    titulo: "Lagosta",
+    descricao: "Fruto do mar nobre e caro",
+    preco: "R$ 160,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/badejo.jpeg",
+    titulo: "Badejo",
+    descricao: "Peixe muito apreciado em restaurantes",
+    preco: "R$ 88,00/kg",
+    link: "descricao"
+  }
 ];
 
+
 const peixesPerto = [
-    {
-        imagem: "img/peixe.png",
-        titulo: "Bacalhau",
-        descricao: "Caro e gostoso",
-        preco: "R$ 1000,00",
-        link: "descricao"
-    }
+  {
+    imagem: "img/peixes/anchova.jpeg",
+    titulo: "Anchova",
+    descricao: "Peixe de carne branca e saborosa",
+    preco: "R$ 45,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/bagre.jpeg",
+    titulo: "Bagre",
+    descricao: "Peixe de água doce, ideal para fritura",
+    preco: "R$ 30,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/linguado.jpeg",
+    titulo: "Linguado",
+    descricao: "Peixe nobre de carne macia",
+    preco: "R$ 85,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/pintado.jpeg",
+    titulo: "Pintado",
+    descricao: "Popular na culinária brasileira",
+    preco: "R$ 50,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/robalo.jpeg",
+    titulo: "Robalo",
+    descricao: "Peixe de carne firme e delicada",
+    preco: "R$ 90,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/corvina.jpeg",
+    titulo: "Corvina",
+    descricao: "Ótimo para moquecas",
+    preco: "R$ 40,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/sardinha.jpeg",
+    titulo: "Sardinha",
+    descricao: "Peixe barato e nutritivo",
+    preco: "R$ 18,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/pescada.jpeg",
+    titulo: "Pescada",
+    descricao: "Carne leve e versátil",
+    preco: "R$ 35,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/pargo.jpeg",
+    titulo: "Pargo",
+    descricao: "Peixe branco de sabor suave",
+    preco: "R$ 60,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/garoupa.jpeg",
+    titulo: "Garoupa",
+    descricao: "Peixe nobre e suculento",
+    preco: "R$ 95,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/merluza.jpeg",
+    titulo: "Merluza",
+    descricao: "Peixe de carne branca e macia",
+    preco: "R$ 38,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/cacao.jpeg",
+    titulo: "Cação",
+    descricao: "Peixe ideal para moquecas",
+    preco: "R$ 42,00/kg",
+    link: "descricao"
+  },
+  {
+    imagem: "img/peixes/tainha.jpeg",
+    titulo: "Tainha",
+    descricao: "Muito comum em regiões costeiras",
+    preco: "R$ 28,00/kg",
+    link: "descricao"
+  }
 ];
+
+
+function embaralharArray(array) {
+    // Algoritmo de Fisher-Yates
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
 
 function criarCards(produtos, containerId) {
     const container = document.getElementById(containerId);
-    produtos.forEach(produto => {
+    container.innerHTML = ""; // Limpa antes de adicionar
+
+    // Embaralha e pega só os 10 primeiros
+    const produtosAleatorios = embaralharArray([...produtos]).slice(0, 10);
+
+    produtosAleatorios.forEach(produto => {
         const card = document.createElement('div');
         card.className = 'card';
 
-        // Só permite abrir o detalhe se link for "descricao"
         if (produto.link === "descricao") {
             card.innerHTML = `
                 <div class="card-content">
@@ -101,6 +248,6 @@ function criarCards(produtos, containerId) {
     });
 }
 
-
 criarCards(produtosDestaque, 'produtos-destaque');
 criarCards(peixesPerto, 'peixes-perto');
+

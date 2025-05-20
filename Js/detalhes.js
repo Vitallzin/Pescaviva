@@ -12,7 +12,7 @@ function mostrarDetalheProduto(titulo, preco, imagem, descricao) {
             <div class="info-detalhe-produto">
                 <h1 id="detalhe-titulo" class="titulo-detalhe-produto">${titulo}</h1>
                 <h1 id="detalhe-preco" class="preco-detalhe-produto">${preco}</h1>
-                <button class="btn-adicionar-carrinho">Adicionar ao Carrinho</button>
+                <button class="btn-adicionar-carrinho" onclick="adicionarAoCarrinho('${titulo}', '${preco}', '${imagem}')">Adicionar ao Carrinho</button>
                 <button class="btn-comprar-detalhe">Comprar</button>
             </div>
             <section class="box-produto-detalhado">
