@@ -29,4 +29,6 @@ function voltarParaLista() {
     document.getElementById('main-notificacao').style.display = 'none';
     document.getElementById('main-chat').style.display = 'none';
     document.getElementById('main-lista').style.display = 'block';
+    window.scrollTo(0, 0);
+
 }

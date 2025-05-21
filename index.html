@@ -58,12 +58,11 @@
     <!-- 1° Main inicio-->
     <main id="main-lista">
         <div class="botoes-main">
-            <button id="botao1">Botão 1</button>
-            <button id="botao2">Botão 2</button>
-            <button id="botao3">Botão 3</button>
-            <button id="botao4">Botão 4</button>
+            <button id="botao1"><span>🐟</span> Água doce</button>
+            <button id="botao2"><span>🦐</span> Frutos do mar</button>
+            <button id="botao3"><span>🔥</span> Ofertas</button>
+          <button id="botao4"><span>⭐</span> Mais vendidos</button>
         </div>
-
 
 
         <!-- Imganes de algumas propagrandaas que vão andar sozinhas ou o usuario vai mexer-->
@@ -99,11 +98,11 @@
 <!-- 1° Main final-->
 
 
-<!-- 2° Main inicio-->
+<!-- 2° Main Detalhe inicio-->
 
 <main id="main-detalhe" style="display:none;"></main>
 
-<!-- 2° Main final-->
+<!-- 2° Main detalhe final-->
 
 
 <!-- 3° Main carrinho-->
@@ -145,15 +144,56 @@
 
 <!-- 5° Main chat-->
 <main id="main-chat" style="display:none;">
-   <h2>Chat</h2>
-    <div id="chat-mensagens" class="chat-mensagens"></div>
-    <form id="chat-form" class="chat-form">
-        <input type="text" id="chat-input" placeholder="Digite sua mensagem..." autocomplete="off" />
-        <button type="submit">Enviar</button>
-    </form>
-    <button onclick="voltarParaLista()">Voltar</button>
+    <h2 style="text-align: center;">Chat</h2>
+    <div class="chat-wrapper">
+       <aside class="chat-contatos">
+    <ul>
+        <li class="contato ativo" data-contato="vendedor">
+            <img src="https://cdn6.campograndenews.com.br/uploads/noticias/2024/10/25/671bb69d54394.jpg" alt="Usuário 1">
+            <span>Rafael Nascimento</span>
+        </li>
+             <li class="contato" data-contato="cliente">
+                 <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/8799559-vintage-retro-restaurante-comida-classica-com-garfo-colher-e-prato-design-conceito-emblema-logo-modelo-gratis-vetor.jpg" alt="Usuário 2">
+                 <span>Restaurente Nandes</span>
+              </li>
+             </ul>
+            
+        </aside>
+        <section class="chat-area">
+            <div id="chat-mensagens" class="chat-mensagens"></div>
+            <form id="chat-form" class="chat-form">
+                <input type="text" id="chat-input" placeholder="Digite sua mensagem..." autocomplete="off" />
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+         <button class="botao-voltar-chat" onclick="voltarParaLista()">Voltar</button>
+    </div>
    
 </main>
+
+<!-- 5° Main chat final-->
+
+
+<!-- 6° Main publicar-->
+
+<main id="main-publicar" style="display:none;">
+    <h2>Publicar Produto</h2>
+    <form id="form-publicar">
+        <label for="produto-nome">Nome do Produto:</label>
+        <input type="text" id="produto-nome" required>
+
+        <label for="produto-descricao">Descrição:</label>
+        <textarea id="produto-descricao" required></textarea>
+
+        <label for="produto-preco">Preço:</label>
+        <input type="number" id="produto-preco" required>
+
+        <button type="submit">Publicar</button>
+    </form>
+    <button onclick="voltarParaLista()">Voltar</button>
+</main>
+
+<!-- 6° Main publicar final-->
 
 
 <!-- Início do rodapé -->
@@ -205,6 +245,8 @@
     <script src="Js/detalhes.js"></script>
     <script src="Js/carrinho.js"></script>
     <script src="Js/notificacao.js"></script>
+    <script src="Js/chat.js"></script>
+    <script src="Js/publicar.js"></script>
 
 </body>
 </html>

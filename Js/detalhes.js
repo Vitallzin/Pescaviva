@@ -1,5 +1,7 @@
 // Use apenas esta função em main.js OU detalhes.js, não nos dois!
 function mostrarDetalheProduto(titulo, preco, imagem, descricao) {
+    window.scrollTo(0, 0);
+
     // Esconde o main da lista
     document.getElementById('main-lista').style.display = 'none';
 

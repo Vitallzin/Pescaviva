@@ -2,6 +2,7 @@ let carrinho = [];
 
 // Adiciona produto ao carrinho, somando quantidade se já existir
 function adicionarAoCarrinho(titulo, preco, imagem) {
+    window.scrollTo(0, 0);
     const index = carrinho.findIndex(item => item.titulo === titulo && item.preco === preco && item.imagem === imagem);
     if (index !== -1) {
         carrinho[index].quantidade += 1;

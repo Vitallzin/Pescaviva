@@ -1,4 +1,5 @@
 function configurarSlide(botaoId, containerId, direcao = 1, botaoVoltarId = null, botaoProximoId = null) {
+  
   const botao = document.getElementById(botaoId);
   const container = document.getElementById(containerId);
   const botaoVoltar = botaoVoltarId ? document.getElementById(botaoVoltarId) : null;
