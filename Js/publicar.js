@@ -90,6 +90,8 @@ if (produtoPrecoInput && ajustePrecoRange) {
         ajustePrecoRange.value = val;
     });
 }
+
+// Botão "Publicar" no header: mostra só a tela de publicação
 const btnPublicar = document.getElementById('publicar');
 if (btnPublicar) {
     btnPublicar.addEventListener('click', function() {
@@ -108,4 +110,21 @@ if (btnPublicar) {
         });
         window.scrollTo(0, 0);
     });
+}
+
+// Botão "Voltar" na tela de publicação: mostra só a tela principal
+function voltarParaLista() {
+    const ids = [
+        'main-lista',
+        'main-detalhe',
+        'main-carrinho',
+        'main-notificacao',
+        'main-chat',
+        'main-publicar'
+    ];
+    ids.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.style.display = (id === 'main-lista') ? 'block' : 'none';
+    });
+    window.scrollTo(0, 0);
 }
