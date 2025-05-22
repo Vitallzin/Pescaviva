@@ -33,8 +33,8 @@ function mostrarCarrinho() {
     document.getElementById('main-lista').style.display = 'none';
     document.getElementById('main-detalhe').style.display = 'none';
     document.getElementById('main-notificacao').style.display = 'none';
-    // document.getElementById('main-chat').style.display = 'none';
-    // document.getElementById('main-publicar').style.display = 'none';
+    document.getElementById('main-chat').style.display = 'none';
+    document.getElementById('main-publicar').style.display = 'none';
     document.getElementById('main-carrinho').style.display = 'block';
 
     const lista = document.getElementById('lista-carrinho');

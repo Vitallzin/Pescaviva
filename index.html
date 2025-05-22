@@ -5,15 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/logo_pescaviva.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icones/logo_pescaviva.png" type="image/x-icon">
     <title>Pesca Viva</title>
 </head>
 
 <body>
+
+
+<!-- Início do cabeçalho -->
+    
     <header>
         <div class="header_principal">
             <div class="header_esquerdo">
-                <img src="img/logo_pescaviva.png" alt="" id="logo_pescaviva"
+                <img src="img/icones/logo_pescaviva.png" alt="" id="logo_pescaviva"
                     style="height: 60px; vertical-align: middle; cursor: pointer;"
                     onclick="window.location.href='index.html'">
 
@@ -21,29 +25,29 @@
                 <label for="pesquisar"></label>
                 <input type="text" id="pesquisar" placeholder="Pesquisar">
                 <button id="botao-pesquisar" class="botao_lupa">
-                    <img src="img/lupa.png" alt="lupa" id="lupa"
+                    <img src="img/icones/lupa.png" alt="lupa" id="lupa"
                         style="height: 24px; vertical-align: middle; cursor: pointer">
                 </button>
 
             </div>
             <nav class="header_direito">
                 <button id="publicar">
-                    <img src="img/publicar.png" alt="publicar   " 
+                    <img src="img/icones/publicar.png" alt="publicar" 
                         style="height: 40px; vertical-align: middle; margin-right: 8px;">Publicar
                 </button>
 
                 <button id="notificacao">
-                    <img src="img/notificacao.png" alt="notificação" 
+                    <img src="img/icones/notificacao.png" alt="notificação" 
                         style="height: 40px; vertical-align: middle; margin-right: 8px;">Notificação
                 </button>
 
                 <button id="carrinho">
-                    <img src="img/carrinho.png" alt="carrinho"
+                    <img src="img/icones/carrinho.png" alt="carrinho"
                         style="height: 30px; vertical-align: middle; margin-right: 8px;">Carrinho
                 </button>
 
                 <button id="chat">
-                    <img src="img/chat.png" alt="chat" 
+                    <img src="img/icones/chat.png" alt="chat" 
                         style="height: 35px; vertical-align: middle; margin-right: 8px;">Chat
                 </button>
 
@@ -53,9 +57,12 @@
             </nav>
         </div>
     </header>
-    <!-- Fim do cabeçalho -->
 
-    <!-- 1° Main inicio-->
+<!-- Fim do cabeçalho -->
+
+
+<!-- 1° Main inicio-->
+
     <main id="main-lista">
         <div class="botoes-main">
             <button id="botao1"><span>🐟</span> Água doce</button>
@@ -67,9 +74,8 @@
 
         <!-- Imganes de algumas propagrandaas que vão andar sozinhas ou o usuario vai mexer-->
         <div class="banner">
-            <img src="img/banner1.png" alt="banner 1">
-            <img src="img/banner_teste.jpg" alt="banner 2">
-            <img src="img/banner1.png" alt="banner 3">
+            <img src="img/banner/banner1.png" alt="banner 1">
+            <img src="img/banner/banner2.jpg" alt="banner 2">
         </div>
 
 
@@ -176,21 +182,33 @@
 
 <!-- 6° Main publicar-->
 
-<main id="main-publicar" style="display:none;">
-    <h2>Publicar Produto</h2>
-    <form id="form-publicar">
-        <label for="produto-nome">Nome do Produto:</label>
-        <input type="text" id="produto-nome" required>
+<main id="main-publicar" style="display: none;">
+    <div class="publicar-container">
+        <h2>Publicar um Produto</h2>
+        <form class="form-publicar" id="form-publicar">
+            <label for="produto-peixe">Nome do Peixe:</label>
+            <input type="text" id="produto-peixe" list="lista-peixes" placeholder="Digite o nome do peixe" autocomplete="off" required>
+            <datalist id="lista-peixes"></datalist>
 
-        <label for="produto-descricao">Descrição:</label>
-        <textarea id="produto-descricao" required></textarea>
+            <div id="faixa-preco" style="display: none;">
+                <h4>Analise da IA</h4>
+                <p>Preço base: <span id="preco-base"></span></p>
+                <label for="ajuste-preco">Ajustar preço (+/- R$3,00):</label>
+                <input type="range" id="ajuste-preco" min="0" max="0" value="0" step="0.01">
+                <input type="number" id="produto-preco" min="0" max="0" step="0.01" style="margin-top:8px;">
+            </div> 
+            
+            <label for="produto-descricao">Descrição:</label>
+            <textarea id="produto-descricao" placeholder="Descreva seu produto" required></textarea>
 
-        <label for="produto-preco">Preço:</label>
-        <input type="number" id="produto-preco" required>
+            <label for="produto-imagem">Imagem do Produto:</label>
+            <input type="file" id="produto-imagem" accept="image/*" required>
 
-        <button type="submit">Publicar</button>
-    </form>
-    <button onclick="voltarParaLista()">Voltar</button>
+            <button type="submit">Publicar</button>
+        </form>
+       <button type="button" onclick="voltarParaLista()">Voltar</button>
+    </div>
+    
 </main>
 
 <!-- 6° Main publicar final-->
@@ -240,6 +258,8 @@
             </tr>
         </table>
     </footer>
+
+<!-- Fim do rodapé -->
     <script src="Js/card.js"></script>
     <script src="Js/passinho.js"></script>
     <script src="Js/detalhes.js"></script>
@@ -247,6 +267,7 @@
     <script src="Js/notificacao.js"></script>
     <script src="Js/chat.js"></script>
     <script src="Js/publicar.js"></script>
+    <script src="Js/anima.js"></script>
 
 </body>
 </html>
